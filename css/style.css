@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+body{
+  background-color: blanchedalmond;
+}
+
+header{
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.banner_pic_area{
+  max-width: 1000px;
+  width: 100%;
+  margin: 70px auto ;
+}
+
+.banner_box{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner_box + .banner_box{
+  margin-top: 50px;
+}
+
+.banner_pic{
+  width: 55%;
+  height: 300px;
+}
+
+.banner_txt{
+  padding-top: 20px;
+  width: 40%;
+}
+ 
+.banner_txt h2{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(161, 28, 28);
+}
+
+.banner_txt dl{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner_txt dt{
+  display: inline-block;
+  margin-top: 20px;
+  width: 40%;
+  font-size: 1.1rem;
+}
+
+.banner_txt dd{
+  display: inline-block;
+  margin-top: 20px;
+  width: 60%;
+  font-size:  1rem;
+}
+
+@media(max-width:840px){
+  
+  .banner_box + .banner_box{
+    margin-top: 50px;
+  }
+  
+  .banner_pic{
+    height: 260px;
+  }
+   
+  .banner_txt h2{
+    font-size: 1.1rem;
+  }
+  
+  .banner_txt dt{
+    margin-top: 15px;
+    font-size: .8rem;
+  }
+  
+  .banner_txt dd{
+    margin-top: 15px;
+    font-size:  .8rem;
+  }
+}
+
+@media(max-width:600px){
+  
+  header h1{
+    font-size: 1.5rem;
+  }
+  
+  .banner_box{
+    /* margin: 0 auto; */
+    /* width: 80%; */
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+  
+  /* .banner_box + .banner_box{
+    margin-top: 50px;
+  } */
+  
+  .banner_pic{
+    width: 100%;
+    height: 250px;
+  }
+  
+  .banner_txt{
+    /* padding-top: 20px; */
+    width: 100%;
+  }
+   
+  .banner_txt h2{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .banner_txt dl{
+    padding: 0 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .banner_txt dt{
+    width: 35%;
+  }
+  
+  .banner_txt dd{
+    width: 60%;
+  }
+}
